@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loan.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator-header">
+          <h2>Smart Loan Calculator</h2>
+          <p class="subtitle">Calculate your monthly EMI.</p>
+        </div>
+        <div class="calculator-body">
+          <div class="input-section">
+            <div class="input-group">
+              <label for="amount">Loan Amount ($)</label>
+              <input type="number" id="amount" />
+              <span class="input-icon">$</span>
+            </div>
+            <div class="input-group">
+              <label for="interest">Annual Interest rate (%)</label>
+              <input type="number" id="interest" step="0.1" />
+              <span class="input-icon">%</span>
+            </div>
+            <div class="input-group">
+              <label for="years">Loan term (Years)</label>
+              <input type="number" id="years" />
+              <span class="input-icon">Yrs</span>
+            </div>
+            <button id="calculateBtn">
+              Calculate <span class="button-icon">→</span>
+            </button>
+          </div>
+
+          <div class="result" id="results">
+            <h3>Loan Summery</h3>
+            <div class="result-grid">
+              <div class="result-item">
+                <span class="result-label">Monthly Payment</span>
+                <span class="result-value" id="monthly">$0.00</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Total Payment</span>
+                <span class="result-value" id="total">$0.00</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Total Interest</span>
+                <span class="result-value" id="totalInterest">$0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="loan.js"></script>
+  </body>
+</html>
