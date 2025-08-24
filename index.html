@@ -14,48 +14,56 @@
           <h2>Smart Loan Calculator</h2>
           <p class="subtitle">Calculate your monthly EMI.</p>
         </div>
+
         <div class="calculator-body">
+          <!-- Input Section -->
           <div class="input-section">
             <div class="input-group">
               <label for="amount">Loan Amount (₹)</label>
-              <input type="number" id="amount" />
+              <input type="number" id="amount" placeholder="e.g. 500000" />
               <span class="input-icon">₹</span>
             </div>
+
             <div class="input-group">
-              <label for="interest">Annual Interest rate (%)</label>
-              <input type="number" id="interest" step="0.1" />
+              <label for="interest">Annual Interest Rate (%)</label>
+              <input type="number" id="interest" step="0.1" placeholder="e.g. 7.5" />
               <span class="input-icon">%</span>
             </div>
+
             <div class="input-group">
-              <label for="years">Loan term (Years)</label>
-              <input type="number" id="years" />
+              <label for="years">Loan Term (Years)</label>
+              <input type="number" id="years" placeholder="e.g. 10" />
               <span class="input-icon">Yrs</span>
             </div>
-            <button id="calculateBtn">
+
+            <button id="calculateBtn" aria-label="Calculate loan">
               Calculate <span class="button-icon">→</span>
             </button>
           </div>
 
+          <!-- Results Section -->
           <div class="result" id="results">
-            <h3>Loan Summery</h3>
+            <h3>Loan Summary</h3>
             <div class="result-grid">
               <div class="result-item">
-                <span class="result-label">Monthly Payment</span>
-                <span class="result-value" id="monthly">$0.00</span>
+                <span class="result-label">Monthly Payment (₹/month)</span>
+                <span class="result-value" id="monthly">₹0.00</span>
               </div>
               <div class="result-item">
-                <span class="result-label">Total Payment</span>
-                <span class="result-value" id="total">$0.00</span>
+                <span class="result-label">Total Payment (₹)</span>
+                <span class="result-value" id="total">₹0.00</span>
               </div>
               <div class="result-item">
-                <span class="result-label">Total Interest</span>
-                <span class="result-value" id="totalInterest">$0.00</span>
+                <span class="result-label">Total Interest (₹)</span>
+                <span class="result-value" id="totalInterest">₹0.00</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Script -->
     <script src="script.js"></script>
   </body>
 </html>
